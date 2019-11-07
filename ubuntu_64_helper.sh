@@ -11,9 +11,9 @@ snap refresh
 apt install curl -y
 
 cd ~/$user
-if [ -d  'Área de Trabalho' ]:
+if [ -d  'Ýrea de Trabalho' ]:
 then
-	cd Área\ de\ Trabalho/
+	cd �rea\ de\ Trabalho/
 else
 	cd Desktop/
 fi
@@ -69,6 +69,9 @@ dpkg -i vstudio.deb
 curl -o sqlectron.deb https://github-production-release-asset-2e65be.s3.amazonaws.com/41959825/1d5e1480-b113-11e8-8aa4-8d23ced2a580?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190818T133803Z&X-Amz-Expires=300&X-Amz-Signature=26eff4b26ffb902f1a8e4400c5030d182c2f53881197bf2a44e66df0ee14f730&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DSqlectron_1.30.0_amd64.deb&response-content-type=application%2Foctet-stream
 dpkg -i sqlectron
 
+curl -o code.deb https://az764295.vo.msecnd.net/stable/6ab598523be7a800d7f3eb4d92d7ab9a66069390/code_1.39.2-1571154070_amd64.deb
+dpkg -i code
+
 echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
     | sudo tee -a /etc/apt/sources.list.d/insomnia.list
 
@@ -86,6 +89,10 @@ npm install -g @vue/cli
 apt install blender krita gimp inkscape -y -f
 curl -o whats.deb https://www.thefanclub.co.za/sites/default/files/public/downloads/whatsapp-webapp_1.0_all.deb
 dpkg -i whats.deb
+
+curl -o slack.deb https://downloads.slack-edge.com/linux_releases/slack-desktop-4.1.2-amd64.deb
+dpkg -i slack.deb
+
 snap install discord
  add-apt-repository universe
  sh -c "echo 'deb http://download.opensuse.org/repositories/home:/ColinDuquesnoy/xUbuntu_19.04/ /' > /etc/apt/sources.list.d/mellowplayer.list"
